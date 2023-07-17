@@ -1,6 +1,4 @@
 import math, pygame
-from pygame_widgets.slider import Slider
-from pygame_widgets.textbox import TextBox
 
 pygame.display.init()
 pygame.font.init()
