@@ -32,7 +32,7 @@ def dg (grid, dx):
                 ending_point = (coordinate_transform[0] + x_component, coordinate_transform[1] + dy_scalar * y_component)
                 
                 color_gradient = (255 / rows * i)
-                pygame.draw.line(win, (color_gradient, 155, 100), starting_point, ending_point)
+                pygame.draw.aaline(win, (color_gradient, 155, 100), starting_point, ending_point)
                 pygame.display.flip()
         
     running = True
